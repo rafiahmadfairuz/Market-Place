@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketPlace</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+</head>
+<style>
+
+
+    li {
+        list-style: none;
+    }
+
+    nav {
+        height: 120px;
+    }
+
+    .home {
+        background-image: url(img/rack-clothes-store.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+     
+        
+
+          
+    }
+
+    h1 {
+        font-size: 5rem;
+        margin-top: 300px;
+        border: 2px transparent;
+        padding: 80px;
+        
+        border-radius: 60px;
+
+    }
+
+    .kartu-isi {
+        transition: 0.3s;
+    }
+
+    .kartu-isi:hover {
+        transform: translateY(-16px);
+    }
+    
+    li {
+        font-size: small;
+    }
+
+    .login{
+        transition: 0.3s;
+    }
+
+    .login:hover {
+        transform: scale(1.1);
+    }
+
+    nav {
+        backdrop-filter: blur(5px);
+    }
+    
+    
+    
+
+
+   
+</style>
+<body>
+    
+<!-- Navigasi -->
+<nav class="container-fluid d-flex justify-content-between shadow-lg p-3 align-items-center bg-transparent position-fixed z-3 overflow-x-hidden">
+    <div class="logo">
+        <a class="ms-5 fs-1 link-underline link-underline-opacity-0 link-dark fw-bold  " href="#home">Market<span class="text-primary">Place</span></a>
+    </div>
+
+    <div class="tengah d-flex ">
+    <ul class="me-5 align-items-center fw-semibold">
+        <li>
+            <a class="fs-3 link-underline link-underline-opacity-0 link-dark link-underline-opacity-75-hover link-underline-opacity-75-hover me-3  " href="#home">Home</a>
+            <a class="fs-3 link-underline link-underline-opacity-0 link-dark link-underline-opacity-75-hover link-underline-opacity-75-hover me-3" href="#man">Men</a>
+            <a class="fs-3 link-underline link-underline-opacity-0 link-dark link-underline-opacity-75-hover link-underline-opacity-75-hover me-3" href="#girl">Girl</a>
+            <a class="fs-3 link-underline link-underline-opacity-0 link-dark link-underline-opacity-75-hover link-underline-opacity-75-hover me-3" href="#sale">Sale</a>
+            <a class="fs-3 link-underline link-underline-opacity-0 link-dark link-underline-opacity-75-hover link-underline-opacity-75-hover me-3" href="#contact">Contact</a>
+        </li>
+    </ul>
+
+    <form class="d-flex " role="search">
+        <input class="form-control me-2 bg-transparent border-dark" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-dark" type="submit">Search</button>
+    </form>
+    </div>
+
+    <div class="icon me-4 d-flex">
+        <a href="cart.html"><svg class="keranjang me-4" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.875 45.5C19.6699 45.5 21.125 44.0449 21.125 42.25C21.125 40.4551 19.6699 39 17.875 39C16.0801 39 14.625 40.4551 14.625 42.25C14.625 44.0449 16.0801 45.5 17.875 45.5Z" fill="black"/>
+            <path d="M40.625 45.5C42.4199 45.5 43.875 44.0449 43.875 42.25C43.875 40.4551 42.4199 39 40.625 39C38.8301 39 37.375 40.4551 37.375 42.25C37.375 44.0449 38.8301 45.5 40.625 45.5Z" fill="black"/>
+            <path d="M46.3938 12.2667C46.1655 11.9875 45.8778 11.7626 45.5518 11.6083C45.2257 11.4541 44.8694 11.3744 44.5088 11.375H13.5982L12.9756 7.84266C12.9092 7.4664 12.7124 7.12556 12.4197 6.88001C12.127 6.63447 11.7571 6.49992 11.375 6.5H4.875C4.44402 6.5 4.0307 6.67121 3.72595 6.97595C3.4212 7.2807 3.25 7.69402 3.25 8.125C3.25 8.55598 3.4212 8.9693 3.72595 9.27405C4.0307 9.57879 4.44402 9.75 4.875 9.75H10.012L14.6494 36.0323C14.7158 36.4086 14.9126 36.7494 15.2053 36.995C15.498 37.2405 15.8679 37.3751 16.25 37.375H42.25C42.681 37.375 43.0943 37.2038 43.3991 36.899C43.7038 36.5943 43.875 36.181 43.875 35.75C43.875 35.319 43.7038 34.9057 43.3991 34.601C43.0943 34.2962 42.681 34.125 42.25 34.125H17.613L17.0402 30.875H41.5838C42.1473 30.8743 42.6933 30.6789 43.1293 30.3219C43.5654 29.9649 43.8647 29.4682 43.9766 28.9159L46.9016 14.2909C46.972 13.9369 46.9631 13.5717 46.8752 13.2217C46.7874 12.8717 46.623 12.5455 46.3938 12.2667Z" fill="black"/>
+        </svg></a>
+
+        <div class="login">
+            <button style="width: 80px; height: 50px;" class="rounded  rounded-4 bg-transparent border-4 " ><a class="link-underline link-underline-opacity-0 link-dark " href="login.html">Login</a></button>
+        <!-- <svg class="akun" width="52" height="52" viewBox="0 0 73 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_1_21)">
+            <path d="M73 36.4635C73 16.3337 56.648 0 36.5 0C16.352 0 0 16.3337 0 36.4635C0 47.5504 5.037 57.5422 12.921 64.2491C12.994 64.3221 13.067 64.3221 13.067 64.3951C13.724 64.9061 14.381 65.4171 15.111 65.9281C15.476 66.1471 15.768 66.4346 16.133 66.7266C22.1674 70.8111 29.2862 72.996 36.573 73C43.8598 72.996 50.9786 70.8111 57.013 66.7266C57.378 66.5076 57.67 66.2201 58.035 65.9966C58.692 65.4901 59.422 64.9791 60.079 64.4681C60.152 64.3951 60.225 64.3951 60.225 64.3221C67.963 57.5377 73 47.5504 73 36.4635ZM36.5 68.4056C29.638 68.4056 23.36 66.2156 18.177 62.5701C18.25 61.9861 18.396 61.4067 18.542 60.8227C18.9784 59.2405 19.6163 57.7209 20.44 56.3013C21.243 54.9142 22.192 53.6733 23.36 52.5783C24.455 51.4832 25.769 50.4658 27.083 49.6628C28.47 48.8598 29.93 48.2758 31.536 47.8378C33.155 47.4042 34.8239 47.1848 36.5 47.1854C41.4765 47.1477 46.2707 49.0569 49.859 52.5053C51.538 54.1842 52.852 56.1537 53.801 58.4137C54.312 59.7277 54.677 61.1132 54.896 62.5701C49.5085 66.3577 43.0857 68.3951 36.5 68.4056ZM25.331 34.6431C24.6891 33.17 24.3657 31.5779 24.382 29.9711C24.382 28.3696 24.674 26.7636 25.331 25.3036C25.988 23.8436 26.864 22.5342 27.959 21.4392C29.054 20.3442 30.368 19.4727 31.828 18.8158C33.288 18.1588 34.894 17.8667 36.5 17.8667C38.179 17.8667 39.712 18.1588 41.172 18.8158C42.632 19.4727 43.946 20.3487 45.041 21.4392C46.136 22.5342 47.012 23.8482 47.669 25.3036C48.326 26.7636 48.618 28.3696 48.618 29.9711C48.618 31.6501 48.326 33.1831 47.669 34.6385C47.0386 36.0789 46.1476 37.3905 45.041 38.5075C43.9237 39.6125 42.612 40.5019 41.172 41.1309C38.1549 42.3682 34.7721 42.3682 31.755 41.1309C30.315 40.5019 29.0033 39.6125 27.886 38.5075C26.7784 37.4064 25.9088 36.0941 25.331 34.6431ZM59.203 58.8517C59.203 58.7057 59.13 58.6327 59.13 58.4867C58.4133 56.2023 57.355 54.0395 55.991 52.0718C54.6259 50.0897 52.9496 48.3411 51.027 46.8934C49.5581 45.788 47.9658 44.8571 46.282 44.1194C47.0444 43.6093 47.7537 43.0239 48.399 42.3719C49.4873 41.2975 50.4431 40.0966 51.246 38.7949C52.8683 36.1411 53.7037 33.0811 53.655 29.9711C53.6789 27.6692 53.2317 25.3868 52.341 23.2642C51.4627 21.2186 50.1987 19.3613 48.618 17.7938C47.0358 16.2473 45.1791 15.0095 43.143 14.1437C41.0172 13.2534 38.7316 12.8078 36.427 12.8343C34.1221 12.8092 31.8365 13.2564 29.711 14.1483C27.6526 15.0035 25.7898 16.2686 24.236 17.8667C22.6815 19.4407 21.4425 21.2975 20.586 23.3372C19.6953 25.4598 19.2481 27.7422 19.272 30.0441C19.272 31.6501 19.491 33.1815 19.929 34.6385C20.367 36.1715 20.951 37.5585 21.754 38.8679C22.484 40.1819 23.506 41.3499 24.601 42.4449C25.258 43.1019 25.988 43.6844 26.791 44.1924C25.0997 44.9453 23.5063 45.9014 22.046 47.0394C20.148 48.4994 18.469 50.2468 17.082 52.1448C15.7054 54.105 14.6461 56.2699 13.943 58.5597C13.87 58.7057 13.87 58.8517 13.87 58.9247C8.103 53.0892 4.526 45.2144 4.526 36.4635C4.526 18.8888 18.907 4.52144 36.5 4.52144C54.093 4.52144 68.474 18.8888 68.474 36.4635C68.4644 44.8583 65.1311 52.9078 59.203 58.8517Z" fill="black"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_1_21">
+            <rect width="73" height="73" fill="white"/>
+            </clipPath>
+            </defs>
+         </svg> -->
+        </div>
+
+    </div>
+
+
+
+</nav>
+<!-- Akhir nav -->
+
+
+<!-- Home -->
+<div class="home container-fluid vh-100 justify-content-center align-items-center overflow-x-hidden"  id="home">
+  <div class="kata-tengah text d-flex text-center fw-bold d-flex justify-content-center align-items-middle" >
+    <h1 class="text-black"> "Temukan <span class="text-success-emphasis fst-italic">Fashion</span>  Terbaik, <br> Harga Paling <span class="text-success-emphasis fst-italic">Terjangkau</span> "</h1>
+  </div>
+</div>
+<!-- Akhir home -->
+
+<!-- Man -->
+<div class="container-fluid text-center vh-50 overflow-hidden z-3 p-3" id="man">
+    <h1>Men Product</h1>
+
+    <div class="kartu d-flex justify-content-center container-fluid " data-aos="fade-right">
+    <div class="row">
+
+       <div class="kartu-isi shadow col-2 me-3 " style="text-align: center; width: 18rem; height: 400px ;">
+        <a href="baju1.html" class="link-underline link-underline-opacity-0 link-dark">
+        <img class="card-img-top mb-4" src="img/polo shirt.jpg" alt="">
+        <div class="text" style="margin-bottom: 500px;">
+        <h3>T-shirt Polo Iconic</h3>
+        <p >Rp 300.999,80</p>
+        </div>
+         </a>
+       </div>
+      
+
+       <div class="kartu-isi shadow col-2 me-3" style="text-align: center; width: 18rem; height: 400px; ">
+        <a href="baju1.html" class="link-underline link-underline-opacity-0 link-dark">
+        <img class="card-img-top mb-4" src="img/polo shirt.jpg" alt="">
+        <div class="text" style="margin-bottom: 500px;">
+        <h3>T-shirt Polo Iconic</h3>
+        <p >Rp 300.999,80</p>
+        </div>
+        </a>
+       </div> 
+    
+
+       <div class="kartu-isi shadow col-2 me-3" style="text-align: center; width: 18rem; height: 400px; ">
+        <a href="baju1.html" class="link-underline link-underline-opacity-0 link-dark">
+        <img class="card-img-top mb-4" src="img/polo shirt.jpg" alt="">
+        <div class="text" style="margin-bottom: 500px;">
+        <h3>T-shirt Polo Iconic</h3>
+        <p >Rp 300.999,80</p>
+        </div>
+           </a>
+       </div> 
+ 
+
+       <div class="kartu-isi shadow col-2 me-3" style="text-align: center; width: 18rem; height: 400px; ">
+        <a href="baju1.html" class="link-underline link-underline-opacity-0 link-dark">
+        <img class="card-img-top mb-4" src="img/polo shirt.jpg" alt="">
+        <div class="text" style="margin-bottom: 500px;">
+        <h3>T-shirt Polo Iconic</h3>
+        <p >Rp 300.999,80</p>
+        </div>
+         </a>
+       </div> 
+   
+
+       <div class="kartu-isi shadow col-2 me-3" style="text-align: center; width: 18rem; height: 400px; ">
+        <a href="baju1.html" class="link-underline link-underline-opacity-0 link-dark">
+        <img class="card-img-top mb-4" src="img/polo shirt.jpg" alt="">
+        <div class="text" style="margin-bottom: 500px;">
+        <h3>T-shirt Polo Iconic</h3>
+        <p >Rp 300.999,80</p>
+        </div>
+         </a>
+       </div> 
+   
+
+       <div class="kartu-isi shadow col-2 me-3" style="text-align: center; width: 18rem; height: 400px; ">
+        <a href="baju1.html" class="link-underline link-underline-opacity-0 link-dark">
+        <img class="card-img-top mb-4" src="img/polo shirt.jpg" alt="">
+        <div class="text" style="margin-bottom: 500px;">
+        <h3>T-shirt Polo Iconic</h3>
+        <p >Rp 300.999,80</p>
+        </div>
+        </a>
+       </div> 
+    
+
+    </div>
+</div>
+</div>
+
+<!-- Akhir man -->
+
+
+
+<!-- Girl -->
+<div class="container-fluid text-center vh-75 overflow-x-hidden z-3 p-3" id="girl">
+    <h1>Girls Product</h1>
+
+    <div class="kartu d-flex justify-content-center container-fluid " data-aos="fade-left">
+    <div class="row">
+       <div class="kartu-isi shadow col-2 me-3 " style="text-align: center; width: 18rem; height: 400px ;">
+        <a href="baju1.html" class="link-underline link-underline-opacity-0 link-dark">
+        <img class="card-img-top mb-4" src="img/polo shirt.jpg" alt="">
+        <div class="text" style="margin-bottom: 500px;">
+        <h3>T-shirt Polo Iconic</h3>
+        <p >Rp 300.999,80</p>
+        </div>
+        </a>
+       </div >
+    
+
+       <div class="kartu-isi shadow col-2 me-3" style="text-align: center; width: 18rem; height: 400px; ">
+        <a href="baju1.html" class="link-underline link-underline-opacity-0 link-dark">
+        <img class="card-img-top mb-4" src="img/polo shirt.jpg" alt="">
+        <div class="text" style="margin-bottom: 500px;">
+        <h3>T-shirt Polo Iconic</h3>
+        <p >Rp 300.999,80</p>
+        </div>
+        </a>
+       </div> 
+
+       <div class="kartu-isi shadow col-2 me-3" style="text-align: center; width: 18rem; height: 400px; ">
+        <a href="baju1.html" class="link-underline link-underline-opacity-0 link-dark">
+        <img class="card-img-top mb-4" src="img/polo shirt.jpg" alt="">
+        <div class="text" style="margin-bottom: 500px;">
+        <h3>T-shirt Polo Iconic</h3>
+        <p >Rp 300.999,80</p>
+        </div>
+        </a>
+       </div> 
+
+       <div class="kartu-isi shadow col-2 me-3" style="text-align: center; width: 18rem; height: 400px; ">
+        <a href="baju1.html" class="link-underline link-underline-opacity-0 link-dark">
+        <img class="card-img-top mb-4" src="img/polo shirt.jpg" alt="">
+        <div class="text" style="margin-bottom: 500px;">
+        <h3>T-shirt Polo Iconic</h3>
+        <p >Rp 300.999,80</p>
+        </div>
+        </a>
+       </div> 
+
+       <div class="kartu-isi shadow col-2 me-3" style="text-align: center; width: 18rem; height: 400px; ">
+        <a href="baju1.html" class="link-underline link-underline-opacity-0 link-dark">
+        <img class="card-img-top mb-4" src="img/polo shirt.jpg" alt="">
+        <div class="text" style="margin-bottom: 500px;">
+        <h3>T-shirt Polo Iconic</h3>
+        <p >Rp 300.999,80</p>
+        </div>
+        </a>
+       </div> 
+
+       <div class="kartu-isi shadow col-2 me-3" style="text-align: center; width: 18rem; height: 400px; ">
+        <a href="baju1.html" class="link-underline link-underline-opacity-0 link-dark">
+        <img class="card-img-top mb-4" src="img/polo shirt.jpg" alt="">
+        <div class="text" style="margin-bottom: 500px;">
+        <h3>T-shirt Polo Iconic</h3>
+        <p >Rp 300.999,80</p>
+        </div>
+        </a>
+       </div> 
+    
+
+    </div>
+</div>
+</div>
+
+<!-- akhir girl -->
+
+
+<!-- sale -->
+<div class="sale container-fluid text-center vh-75" id="sale">
+    <h1>Promo Special</h1>
+    <select name="" id="" class="w-50 border-top-0 border-end-0 border-start-0 border-bottom-5 mb-5" >
+        <option value="">baju</option>
+        <option value="">Sepatu</option>
+        <option value="">Jeans</option>
+        <option value="">Kemeja</option>
+        <option value="">Jas</option>
+    </select>
+
+    <div class="container kartu d-flex justify-content-center ">
+        <div class="row">
+           <div class="kartu-isi shadow col-3 me-3 mb-5 " style="text-align: center; width: 18rem; height: 400px ;">
+            <a href="baju1.html" class="link-underline link-underline-opacity-0 link-dark">
+            <img class="card-img-top mb-4" src="img/polo shirt.jpg" alt="">
+            <div class="text" style="margin-bottom: 500px;">
+            <h3>T-shirt Polo Iconic</h3>
+            <p >Rp 300.999,80</p>
+            </div>
+            </a>
+           </div >
+
+           <div class="kartu-isi shadow col-3 me-3 mb-5 " style="text-align: center; width: 18rem; height: 400px ;">
+            <a href="baju1.html" class="link-underline link-underline-opacity-0 link-dark">
+            <img class="card-img-top mb-4" src="img/polo shirt.jpg" alt="">
+            <div class="text" style="margin-bottom: 500px;">
+            <h3>T-shirt Polo Iconic</h3>
+            <p >Rp 300.999,80</p>
+            </div>
+            </a>
+           </div >
+
+           <div class="kartu-isi shadow col-3 me-3 mb-5 " style="text-align: center; width: 18rem; height: 400px ;">
+            <a href="baju1.html" class="link-underline link-underline-opacity-0 link-dark">
+            <img class="card-img-top mb-4" src="img/polo shirt.jpg" alt="">
+            <div class="text" style="margin-bottom: 500px;">
+            <h3>T-shirt Polo Iconic</h3>
+            <p >Rp 300.999,80</p>
+            </div>
+            </a>
+           </div >
+
+           <div class="kartu-isi shadow col-3 me-3 mb-5 " style="text-align: center; width: 18rem; height: 400px ;">
+            <a href="baju1.html" class="link-underline link-underline-opacity-0 link-dark">
+            <img class="card-img-top mb-4" src="img/polo shirt.jpg" alt="">
+            <div class="text" style="margin-bottom: 500px;">
+            <h3>T-shirt Polo Iconic</h3>
+            <p >Rp 300.999,80</p>
+            </div>
+            </a>
+           </div >
+
+           <div class="kartu-isi shadow col-3 me-3 mb-5 " style="text-align: center; width: 18rem; height: 400px ;">
+            <a href="baju1.html" class="link-underline link-underline-opacity-0 link-dark">
+            <img class="card-img-top mb-4" src="img/polo shirt.jpg" alt="">
+            <div class="text" style="margin-bottom: 500px;">
+            <h3>T-shirt Polo Iconic</h3>
+            <p >Rp 300.999,80</p>
+            </div>
+            </a>
+           </div >
+
+           <div class="kartu-isi shadow col-3 me-3 mb-5 " style="text-align: center; width: 18rem; height: 400px ;">
+            <a href="baju1.html" class="link-underline link-underline-opacity-0 link-dark">
+            <img class="card-img-top mb-4" src="img/polo shirt.jpg" alt="">
+            <div class="text" style="margin-bottom: 500px;">
+            <h3>T-shirt Polo Iconic</h3>
+            <p >Rp 300.999,80</p>
+            </div>
+            </a>
+           </div >
+
+           <div class="kartu-isi shadow col-3 me-3 mb-5 " style="text-align: center; width: 18rem; height: 400px ;">
+            <a href="baju1.html" class="link-underline link-underline-opacity-0 link-dark">
+            <img class="card-img-top mb-4" src="img/polo shirt.jpg" alt="">
+            <div class="text" style="margin-bottom: 500px;">
+            <h3>T-shirt Polo Iconic</h3>
+            <p >Rp 300.999,80</p>
+            </div>
+            </a>
+           </div >
+
+           <div class="kartu-isi shadow col-3 me-3 mb-5 " style="text-align: center; width: 18rem; height: 400px ;">
+            <a href="baju1.html" class="link-underline link-underline-opacity-0 link-dark">
+            <img class="card-img-top mb-4" src="img/polo shirt.jpg" alt="">
+            <div class="text" style="margin-bottom: 500px;">
+            <h3>T-shirt Polo Iconic</h3>
+            <p >Rp 300.999,80</p>
+            </div>
+            </a>
+           </div >
+        </div>
+    </div>
+    
+
+
+</div>
+<!-- akhir sale -->
+
+
+<!-- contact  -->
+<div class="contact container-fluid d-flex justify-content-center mt-5 vh-75" id="contact">
+<div class="map me-5">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.4041187903013!2d112.58220987591253!3d-7.420448873091177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78084e164c2e91%3A0xda653a49b0cff45c!2sSMK%20Krian%201%20Sidoarjo!5e0!3m2!1sen!2sid!4v1717334926146!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<div class="teks d-flex flex-column mt-3">
+  
+    <input style="width: 500px; height: 50px; margin-bottom: 30px;" type="text" placeholder="Nama">
+    <input style="width: 500px; height: 50px; margin-bottom: 30px;" type="text" placeholder="Email">
+    <input style="width: 500px; height: 50px; margin-bottom: 30px;" type="text" placeholder="Phone">
+    <input style="width: 500px; height: 50px; margin-bottom: 30px;" type="text" placeholder="Addres">
+    <input style="width: 500px; height: 50px; margin-bottom: 30px;" type="text" placeholder="Message">
+ <button class="rounded-pill p-3 bg-dark text-light " type="submit">Submit</button>
+</div>
+</div>
+
+<!-- Footer -->
+<div class="fo container-fluid bg-dark text-light text-left" style="height: 400px; margin-top: 200px;">
+ <div class="isi-fot  d-flex justify-content-center  p-5 mb-5" style="margin-top: 200px;">
+    <ul class="me-5">
+    <h3>MarketPlace</h3>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+   </ul>
+
+   <ul class="me-5">
+    <h3>Support</h3>
+    <li>Contact Us</li>
+    <li>FAQs</li>
+    <li>Size Guide</li>
+    <li>Returns</li>
+   </ul>
+
+   <ul class="me-5">
+    <h3>Shop</h3>
+    <li>Menss</li>
+    <li>Shopping</li>
+    <li>Discounts</li>
+    <li>Womens</li>
+   </ul>
+
+   <ul class="me-5">
+    <h3>Partner</h3>
+    <li>Our Story</li>
+    <li>Careers</li>
+    <li>Privacy</li>
+    <li>conditions</li>
+   </ul>
+
+   <ul class="me-5">
+    <h3>Contact</h3>
+    <li>62 867 543 2365</li>
+    <li>62 867 543 2365</li>
+    <li>Help@Shopper.com</li>
+    
+   </ul>
+</div>
+
+<hr class="mb-5">
+<p class="fw-light text-center">© 2024 All rights reserved. Designed by Rafi' Ahmad Fairuz.</p>
+</div>
+<!-- Ahkir contact -->
+
+
+
+
+
+
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+         AOS.init();
+    </script>
+</body>
+</html>
